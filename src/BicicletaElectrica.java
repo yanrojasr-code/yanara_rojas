@@ -4,8 +4,8 @@ public class BicicletaElectrica extends  Bicicleta implements  ConGarantiaExtend
     private  boolean bateriacertificada;
     private  boolean garantiaextendida;
 
-    public BicicletaElectrica(String codigoBicicleta, int anoFabricacion, double peso, int autonomia, boolean bateriacertificada, boolean garantiaextendida) {
-        super(codigoBicicleta, anoFabricacion, peso);
+    public BicicletaElectrica(String codigo, int anoFabricacion, double peso, int autonomia, boolean bateriacertificada, boolean garantiaextendida) {
+        super(codigo, anoFabricacion, peso);
 
         setAutonomia(autonomia);
         setBateriacertificada(bateriacertificada);
@@ -45,6 +45,15 @@ public class BicicletaElectrica extends  Bicicleta implements  ConGarantiaExtend
         return  costo;
     }
 
+    @Override
+    public boolean tieneGarantiaExtendida() {
+        return false;
+    }
+
+    @Override
+    public void activarGarantiaExtendida() {
+
+    }
 }
 
-}
+

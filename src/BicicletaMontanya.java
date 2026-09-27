@@ -2,8 +2,8 @@ public class BicicletaMontanya extends Bicicleta{
 
     private  int suspensiones;
 
-    public BicicletaMontanya(String codigoBicicleta, int anoFabricacion, double peso, int suspensiones) {
-        super(codigoBicicleta, anoFabricacion, peso);
+    public BicicletaMontanya(String codigo, int anoFabricacion, double peso, int suspensiones) {
+        super(codigo, anoFabricacion, peso);
         setSuspensiones(suspensiones);
     }
 

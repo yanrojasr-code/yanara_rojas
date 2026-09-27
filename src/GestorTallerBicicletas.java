@@ -14,6 +14,12 @@ public class GestorTallerBicicletas {
         ArrayList<Bicicleta> resultado = new ArrayList<>();
 
         for (Bicicleta bicicleta : bicicletas){
+            switch  (bicicleta.getCodigo()){
+                case "BIC-E01":
+                    resultado.add(bicicleta);
+                    break;
+
+            }
 
         }
         return  resultado;

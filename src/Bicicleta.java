@@ -1,22 +1,22 @@
 public  abstract class  Bicicleta {
-    private String codigoBicicleta;
+    private String codigo;
     private  int anoFabricacion;
     private  double peso;
 
 
-    public Bicicleta(String codigoBicicleta, int anoFabricacion, double peso) {
-        setCodigoBicicleta(codigoBicicleta);
+    public Bicicleta(String codigo, int anoFabricacion, double peso) {
+        setCodig(codigo);
         setAnoFabricacion(anoFabricacion);
         setPeso(peso);
 
     }
 
-    public String getCodigoBicicleta() {
-        return codigoBicicleta;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setCodigoBicicleta(String codigoBicicleta) {
-        this.codigoBicicleta = codigoBicicleta;
+    public void setCodig(String codigo) {
+        this.codigo = codigo;
     }
 
     public int getAnoFabricacion() {
@@ -37,9 +37,8 @@ public  abstract class  Bicicleta {
 
     @Override
     public String toString() {
-        return "Bicicleta{" +
-                "codigoBicicleta='" + codigoBicicleta + '\'' +
-                ", anoFabricacion=" + anoFabricacion +
+        return "CODIGO: " + codigo + '\'' +
+                ", ANIOFABRICACION: " + anoFabricacion +
                 '}';
     }
 }
