@@ -47,11 +47,12 @@ public class BicicletaElectrica extends  Bicicleta implements  ConGarantiaExtend
 
     @Override
     public boolean tieneGarantiaExtendida() {
-        return false;
+        return garantiaextendida;
     }
 
     @Override
     public void activarGarantiaExtendida() {
+        garantiaextendida = true;
 
     }
 }

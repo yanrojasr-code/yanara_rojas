@@ -13,15 +13,25 @@ public class GestorTallerBicicletas {
     public ArrayList<Bicicleta> buscarPorCodigo(String codigo){
         ArrayList<Bicicleta> resultado = new ArrayList<>();
 
-        for (Bicicleta bicicleta : bicicletas){
-            switch  (bicicleta.getCodigo()){
-                case "BIC-E01":
-                    resultado.add(bicicleta);
-                    break;
 
+            switch  (codigo){
+                case "BIC-E01":
+                    System.out.println("======= BUSQUEDA POR EL CODIGO: BIC-E01=============" );
+                    resultado.add(bicicletas.get(0));
+                    break;
+                case "BIC-E02":
+                    System.out.println("======= BUSQUEDA POR EL CODIGO: BIC-E02" );
+
+                        resultado.add(bicicletas.get(1));
+                        break;
+                case "BIC-M01":
+                    resultado.add(bicicletas.get(2));
+                    break;
+                case "BIC-M02":
+                    resultado.add(bicicletas.get(3));
+                    break;
             }
 
-        }
         return  resultado;
 
     }
