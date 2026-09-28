@@ -1,6 +1,7 @@
 import  java.util.ArrayList;
 public  class Main {
     public static  void main(String[] args){
+        // SE CREAN LAS BICICLETA ELECTRICAS Y BICICLETAS MONTAÑAS
 
         BicicletaElectrica bicicleta1 = new BicicletaElectrica("BIC-E01",2023,22.5,60,false,false);
         BicicletaElectrica bicicleta2 = new BicicletaElectrica("BIC-E02",2022,24.0, 45,true,false);
@@ -16,6 +17,8 @@ public  class Main {
         gestor.registrarBicicleta(bicicleta3);
         gestor.registrarBicicleta(bicicleta4);
         System.out.println("--------------------------------------------------------------------");
+
+        // SE BUSCA LA BICICLETA POR CODIGOS
         ArrayList<Bicicleta> resultado = gestor.buscarPorCodigo("BIC-E01");
         for (Bicicleta bicicleta : resultado);
         System.out.println("TIPO: BICICLETA ELECTRICA | " + "CODIGO: " + bicicleta1.getCodigo());

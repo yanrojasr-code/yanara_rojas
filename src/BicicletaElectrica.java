@@ -1,3 +1,4 @@
+///* SUBCLASES QUE REPRESENTA LA BICICLETA ELECTRICA
 public class BicicletaElectrica extends  Bicicleta implements  ConGarantiaExtendida{
 
     private  int autonomia;

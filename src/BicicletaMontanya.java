@@ -1,3 +1,4 @@
+///* SUB-CLASE QUE REPRESENTA UNA BICICLETA MONTAÑA
 public class BicicletaMontanya extends Bicicleta{
 
     private  int suspensiones;

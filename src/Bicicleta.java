@@ -1,9 +1,11 @@
+///* ES LA CLASE BASE  PARA LA BICICLETAS
 public  abstract class  Bicicleta {
+    // ATRIBUTOS DE LAS BICICLETAS
     private String codigo;
     private  int anoFabricacion;
     private  double peso;
 
-
+    // CONSTRUCTOR DE LA CLASE
     public Bicicleta(String codigo, int anoFabricacion, double peso) {
         setCodig(codigo);
         setAnoFabricacion(anoFabricacion);
